@@ -1,4 +1,4 @@
-package com.chronelab.roombasic.ui.view
+package com.chronelab.roombasic.ui.view.header
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Column
@@ -6,13 +6,6 @@ import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
-import androidx.compose.material.icons.Icons
-import androidx.compose.material.icons.filled.ArrowBack
-import androidx.compose.material.icons.filled.Close
-import androidx.compose.material.icons.filled.ExitToApp
-import androidx.compose.material.icons.filled.Menu
-import androidx.compose.material3.Icon
-import androidx.compose.material3.IconButton
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
@@ -25,12 +18,9 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.chronelab.roombasic.ui.theme.RoomBasicTheme
 
-
 @Composable
-fun NoteHeader(
+fun LoginHeader(
     title: String,
-    leftButtonAction: () -> Unit,
-    rightButtonAction: () -> Unit
 ) {
     Column(
         modifier = Modifier
@@ -42,15 +32,6 @@ fun NoteHeader(
             modifier = Modifier.fillMaxWidth(),
             verticalAlignment = Alignment.CenterVertically
         ) {
-            IconButton(onClick = {
-                leftButtonAction()
-            }) {
-                Icon(
-                    imageVector = Icons.Filled.ArrowBack,
-                    contentDescription = "Back",
-                    tint = Color.White
-                )
-            }
             Spacer(modifier = Modifier.weight(1f))
             Text(
                 text = title,
@@ -60,27 +41,16 @@ fun NoteHeader(
                 modifier = Modifier.padding(top = 8.dp)
             )
             Spacer(modifier = Modifier.weight(1f))
-            IconButton(onClick = {
-                rightButtonAction()
-            }) {
-                Icon(
-                    imageVector = Icons.Filled.ExitToApp,
-                    contentDescription = "Logout",
-                    tint = Color.White
-                )
-            }
         }
     }
 }
 
 @Preview(showBackground = true)
 @Composable
-fun NoteHeaderPreview() {
+fun LoginHeaderPreview() {
     RoomBasicTheme {
-        HomeHeader(
-            title = "Add Note",
-            leftButtonAction = {},
-            rightButtonAction = {}
+        LoginHeader(
+            title = "Login"
         )
     }
 }

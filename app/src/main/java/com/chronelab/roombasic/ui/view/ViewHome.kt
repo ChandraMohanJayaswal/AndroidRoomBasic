@@ -27,6 +27,7 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.chronelab.roombasic.database.entity.Note
 import com.chronelab.roombasic.ui.theme.RoomBasicTheme
+import com.chronelab.roombasic.ui.view.header.HomeHeader
 
 
 @Composable

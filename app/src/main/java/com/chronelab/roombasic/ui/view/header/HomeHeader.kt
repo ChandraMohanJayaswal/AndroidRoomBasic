@@ -1,4 +1,4 @@
-package com.chronelab.roombasic.ui.view
+package com.chronelab.roombasic.ui.view.header
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Column

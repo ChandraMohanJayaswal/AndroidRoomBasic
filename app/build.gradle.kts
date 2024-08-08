@@ -65,6 +65,7 @@ dependencies {
     implementation(libs.androidx.appcompat)
     implementation(libs.material)
     implementation(libs.androidx.activity)
+    testImplementation(libs.junit.junit)
 
     // Testing
     androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")

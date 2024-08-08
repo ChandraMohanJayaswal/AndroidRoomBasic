@@ -39,8 +39,9 @@ class LoginActivity : ComponentActivity() {
         Log.i(TAG,"Handle any updates or UI changes needed here" )
     }
 
-    private fun btnLoginAction(user: User) {
-        if (user.isLoginValid()) {
+    private fun btnLoginAction(user: User): Pair<Boolean, String> {
+        val pairMessage = user.validate()
+        if (pairMessage.first) {
             val roomApp = application as com.chronelab.roombasic.RoomApp
             roomApp.login(user)
             var intent = Intent(this, com.chronelab.roombasic.activity.HomeActivity::class.java)
@@ -48,6 +49,7 @@ class LoginActivity : ComponentActivity() {
         } else {
             Log.i(TAG, "You are not valid user!")
         }
+        return pairMessage
     }
 }
 

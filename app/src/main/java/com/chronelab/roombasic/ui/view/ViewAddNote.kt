@@ -21,6 +21,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
 import com.chronelab.roombasic.R
+import com.chronelab.roombasic.ui.view.header.NoteHeader
 
 @Composable
 fun ViewAddNote(btnSaveNoteAction:(userName: String, password: String)->Unit, leftButtonAction: () -> Unit, rightButtonAction: () -> Unit) {
