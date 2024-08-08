@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">RoomDatabase</string>
+    <string name="app_name">AndroidRoomBasic</string>
     <string name="txt_logout">Logout</string>
     <string name="txt_login">Login</string>
     <string name="txt_save_note">Save Note</string>

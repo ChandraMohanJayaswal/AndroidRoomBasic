@@ -5,11 +5,11 @@ plugins {
 }
 
 android {
-    namespace = "com.chronelab.roomdatabase"
+    namespace = "com.chronelab.roombasic"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.chronelab.roomdatabase"
+        applicationId = "com.chronelab.roombasic"
         minSdk = 24
         targetSdk = 34
         versionCode = 1

@@ -19,6 +19,6 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "RoomDatabase"
+rootProject.name = "AndroidRoomBasic"
 include(":app")
  
